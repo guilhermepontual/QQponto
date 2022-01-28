@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" src="CSS/editarPonto.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>QQponto</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="brand-name">
+      <h1>QQponto</h1>
+    </div>
+    <ul>
+      <li>
+        <a href="/registrarPonto" style="color: #1E265E"> <img src="./Img/ponto.png" alt="">&nbsp;Meu ponto</a>
+      </li>
+      <!--non-breaking space-->
+      <li>
+        <img src="./Img/historico.png" alt="">&nbsp;Histórico
+      </li>
+      <!--non-breaking space-->
+      <br>
+      <br>
+      <li>
+        <a href="/logout" style="color:#1E265E;"> <img src="./Img/logout.png" alt="">&nbsp;Sair </a>
+      </li>
+      <!--non-breaking space-->
+    </ul>
+  </div>
+  <div class="container">
+    <div class="header">
+      <div class="nav">
+        <h2 class="registrar-ponto">Histórico</h2>
+      </div>
+
+      <div class="user">
+        <img class="img-user" src="Img/user-ofc.png" alt="">
+        <div class="text-img">
+          <h3>Guilherme</h3>
+          <p>Colaborador</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <table class="table-historico" id="table-historico">
+      <thead>
+        <tr>
+          <th>
+            <h1>Ponto</h1>
+          </th>
+          <th>
+            <h1>Data</h1>
+          </th>
+          <th>
+            <h1>Observação</h1>
+          </th>
+          <th>
+            <h1>Id</h1>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ponto">
+          <div>
+            <td>Saída</td>
+            <td>00/00/00 / 00:00
+              <i class="fas fa-edit" id="modal-btn">&nbsp;</i>
+              <i class="fas fa-trash">&nbsp;</i>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="ponto">
+          <td></td>
+          <td>
+            <i class="fas fa-edit">&nbsp;</i>
+            <i class="fas fa-trash">&nbsp;</i>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ponto">
+          <td></td>
+          <td>
+            <i class="fas fa-edit">&nbsp;</i>
+            <i class="fas fa-trash">&nbsp;</i>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ponto">
+          <td></td>
+          <td>
+            <i class="fas fa-edit">&nbsp;</i>
+            <i class="fas fa-trash">&nbsp;</i>
+          </td>
+          </td>
+          <td>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <table id="resumo">
+
+    </table>
+
+    <button onclick="reload()" class="btn-historico">Resumo</button>
+    <input type="month" class="btn-month" />
+    <a data-js="export-table-btn" onclick="csv()" id="btnExport">Exportar CSV</a>
+  </div>
+
+  <div class="modal-bg">
+    <div class="modal">
+      <h2>Editar ponto</h2>
+      <label for="ponto">Tipo de ponto:</label>
+      <input type="text" id="ponto" name="ponto" value="">
+      <label for="obs">Observação:</label>
+      <input type="text" id="obs" name="observacao" value="">
+      <button onclick="edit()">Editar</button>
+      <span class="modal-close">X</span>
+    </div>
+  </div>
+
+  <script src="js/editar.js"></script>
+  <script src="./js/exportCsv.js"></script>
+  <script src="./js/historico.js"></script>
+  <script src="./js/removerPonto.js"></script>
+
+</body>
+
+</html>

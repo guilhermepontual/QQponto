@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script src="./js/script-login.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/login.css">
+  <script src="https://kit.fontawesome.com/c8c11837ad.js" crossorigin="anonymous"></script>
+
+  <title>QQponto</title>
+</head>
+
+<body>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+
+    <div class="content">
+      <!--FORMULÁRIO DE LOGIN-->
+      <div class="tela-login">
+        <form action="dashboard-admin.html" method="POST">
+          <h1>Login</h1>
+          <br>
+          <div class="input-login">
+            <label class="label-icon" for="">
+              <i class="fas fa-user icon-modify"></i>
+              <input class="matricula" id="registration" name="registration" required="required" type="text"
+                placeholder="Matrícula" maxlength="6" />
+            </label>
+          </div>
+          <br>
+          <br>
+          <div class="input-register">
+            <label class="label-icon" for="">
+
+              <i class="fas fa-lock icon-modify"></i>
+              <input class="options" id="password" name="password" required="required" type="password"
+                placeholder="Senha" maxlength="15" />
+            </label>
+          </div>
+          <br>
+          <div>
+            <input onclick="logar()" class="botao" type="button" value="Login" />
+          </div>
+          <br>
+          <br>
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>

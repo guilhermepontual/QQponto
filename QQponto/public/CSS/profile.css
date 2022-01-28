@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+body{
+  min-width: none;
+}
+
+li{
+  list-style: none;
+}
+
+h1{
+  color: #1E265E;
+}
+
+h2{
+  bottom: 30px;
+  margin: 50px;
+  width: 50%;
+  align-items: center;
+}
+
+.wrapper {
+  position: fixed;
+  background-color: #F3F3F3;
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.wrapper .brand-name{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper li{
+  font-size: 24px;
+  padding: 10px 40px;
+  color: #1E265E;
+  display: flex;
+  align-items: center;
+  transition: .3s ease all;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.wrapper li:hover{
+  background-color: #089b59;
+  color: #1E265E;
+}
+
+.brand-name h2{
+  display: flex;
+  width: 100%;
+}
+
+.profile {
+  padding-top: 48px;
+  position: relative;
+  font-size: 35px;
+  color: #1E265E;
+  
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  width: 75vw;
+  height: 100vh;
+}
+
+.user{
+  float: right;
+  margin-right: 7%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-left: 10px solid #089b59;
+}
+.user .text-img{
+  text-align: center;
+}
+
+.user .img-user{
+  margin: 20px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 60%;
+  height: 1026px;
+  right: 379px;
+  top: 0px;
+  border: 2px solid #F3F3F3;
+}
+
+.banco-horas{
+  position: absolute;
+  right: 0;
+  width: 75vw;
+  height: 100vh;
+}
+
+.botao{
+  background-color: #089B58;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  width: 306px;
+}
+

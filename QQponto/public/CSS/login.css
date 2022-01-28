@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+body{
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(45deg, #007841 0%, rgba(246, 231, 56, 0.79) 100%);
+}
+
+a{
+  text-decoration: none;
+}
+
+label{
+ float: right;
+}
+
+
+.tela-login{
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px;
+  border-radius: 10px;
+}
+
+input{
+  padding: 15px;
+  font-family: 'Rubik', sans-serif;
+  border-radius: 5px;
+  color: black;
+  font-size:15px;
+  width: 300px;
+  margin: 10px;
+  border: none;
+}
+
+.botao{
+  background-color: #307FE2;
+  border: none;
+  padding: 15px;
+  width: 95%;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif, medium;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  transition: .3s ease all;
+  margin: 10px;
+}
+
+.botao:hover{
+  background-color: #4d91e4;
+}
+
+.nome{
+  float: left;
+  height:30px;
+}
+
+.label-icon{
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+.icon-modify{
+  padding: 0 5px;
+  margin: 5px;
+}
+
+h1{
+  text-align: center;
+}
+
+.img-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.ajuda{
+  cursor: pointer;
+  border: solid #fff;
+  display: block;
+  text-align: center;
+  float: right;
+
+}
+
+.modal-bg{
+  position: fixed;
+  width: 100%;
+  height: 613px;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  transition: visibility 0s, opacity 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal{
+  position: relative;
+  background-color: #fff;
+  width: 50%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5px;
+
+}
+.modal button{
+  padding: 10px 30px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.modal-close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

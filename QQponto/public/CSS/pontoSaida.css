@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+body{
+  min-width: none;
+}
+
+li{
+  list-style: none;
+}
+
+h1{
+  color: #1E265E;
+}
+
+h2{
+  bottom: 30px;
+  margin: 50px;
+  width: 50%;
+  align-items: center;
+}
+
+.wrapper {
+  position: fixed;
+  background-color: #F3F3F3;
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.wrapper .brand-name{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper li{
+  font-size: 24px;
+  padding: 10px 40px;
+  color: #1E265E;
+  display: flex;
+  align-items: center;
+  transition: .3s ease all;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.wrapper li:hover{
+  background-color: #089b59;
+  color: #1E265E;
+}
+
+.brand-name h2{
+  display: flex;
+  width: 100%;
+}
+
+.registrar-ponto {
+  padding-top: 48px;
+  position: relative;
+  font-size: 35px;
+  color: #1E265E;
+  
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  width: 75vw;
+  height: 100vh;
+}
+
+.user{
+  float: right;
+  margin-right: 7%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-left: 10px solid #089b59;
+  
+}
+.user .text-img{
+  text-align: center;
+}
+
+.user .img-user{
+  margin: 20px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 60%;
+  height: 1026px;
+  right: 379px;
+  top: 0px;
+  border: 2px solid #F3F3F3;
+}
+
+.botaoEntrada{
+  background-color: #089B58;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  width: 306px;
+  margin: 20px auto;
+  transition: .3s ease all;
+}
+
+.bataoEntrada:hover{
+  background-color: #3b4440;
+}
+
+.banco-horas{
+  position: relative;
+}
+.banco-horas h3{
+  position: absolute;
+  margin: 100%;
+  margin-left: -100%;
+  width: 200px;
+  float: left;
+  color: #1E265E;
+  font-weight: 400;
+}
+.banco-horas ul{
+  position: absolute;
+  margin: 300%;
+  margin-left: -100%;
+  float: left;
+}
+
+.banco-horas .entrada-img{
+  border: 1px solid #089B58;
+  padding: 30px;
+  box-shadow: 0px 15px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+}
+.banco-horas .saida-img{
+  border: 1px solid #ff0000;
+  padding: 30px;
+  box-shadow: 0px 15px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+}
+.banco-horas p{
+  margin: 1px;
+  padding: 1px;
+}
+
+.saida{
+  height: 18vh;
+}
+
+.bater-entrada{
+  float: left;
+  margin-right: 40px;
+}
+
+
+
+.bater-saida{
+ float: right;
+ margin-left: 40px;
+ transition: .3s ease all;
+}
+
+.botaoSaida{
+  background-color: #f44336;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  width: 306px;
+  margin: 20px auto;
+}
+
+a{
+  text-decoration: none;
+  color: #1E265E;
+}
+
+h4{
+  text-align: center;
+}

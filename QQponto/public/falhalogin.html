@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script src="./js/script-login.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/falhaLogin.css">
+  <script src="https://kit.fontawesome.com/c8c11837ad.js" crossorigin="anonymous"></script>
+
+  <title>QQponto</title>
+</head>
+
+<body>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+
+    <div class="content">
+      <!--FORMULÁRIO DE LOGIN-->
+      <div class="tela-login">
+        <form action="/auth" method="POST">
+          <img class="img-logo" src="./Img/quero-quero-logo (2).png" alt="Logo-Lojas-QueroQuero">
+          <div class="form-group">
+            <h1>QQponto</h1>
+            <p class="falha-login">Usuário ou senha inválidos!</p>
+          </div>
+          <div class="input-login">
+            <label class="label-icon" for="">
+              <i class="fas fa-user icon-modify"></i>
+              <input class="matricula" id="registration" name="matricula" required="required" type="text"
+                placeholder="Matrícula" maxlength="6" />
+            </label>
+          </div>
+          <br>
+          <br>
+          <div class="input-register">
+            <label class="label-icon" for="">
+
+              <i class="fas fa-lock icon-modify"></i>
+              <input class="options" id="password" name="senha" required="required" type="password" placeholder="Senha"
+                maxlength="15" />
+            </label>
+          </div>
+          <br>
+          <div>
+            <button class="botao" type="submit" value="Login">Entrar</button>
+            <p id="modal-btn" class="ajuda">Ajuda para fazer o login?</p>
+          </div>
+          <div class="modal-bg">
+            <div class="modal">
+              <label for="email">Por favor entrar em contato:</label>
+              <label for="contato">QueroQueroRH@hotmail.com</label>
+              <span class="modal-close">X</span>
+            </div>
+          </div>
+          <br>
+          <br>
+        </form>
+      </div>
+    </div>
+    <script src="./js/login-modal.js"></script>
+</body>
+
+</html>

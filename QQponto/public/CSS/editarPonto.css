@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body{
+  min-width: none;
+}
+
+li{
+  list-style: none;
+}
+
+h1{
+  color: #1E265E;
+}
+
+h2{
+  bottom: 30px;
+  margin: 50px;
+  width: 50%;
+  align-items: center;
+}
+
+i{
+  cursor: pointer;
+}
+
+a{
+  color: #1E265E;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  position: fixed;
+  background-color: #F3F3F3;
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.wrapper .brand-name{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper li{
+  font-size: 24px;
+  padding: 10px 40px;
+  color: #1E265E;
+  display: flex;
+  align-items: center;
+  transition: .3s ease all;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.wrapper li:hover{
+  background-color: #089b59;
+  color: #1E265E;
+}
+
+.brand-name h2{
+  display: flex;
+  width: 100%;
+}
+
+.registrar-ponto {
+  padding-top: 48px;
+  position: relative;
+  font-size: 35px;
+  color: #1E265E;
+  
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  width: 75vw;
+  height: 100vh;
+}
+
+.user{
+  float: right;
+  margin-right: 7%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-left: 10px solid #089b59;
+}
+.user .text-img{
+  text-align: center;
+}
+
+.user .img-user{
+  margin: 20px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 60%;
+  height: 1026px;
+  right: 379px;
+  top: 0px;
+  border: 2px solid #F3F3F3;
+}
+
+.table-historico th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+.table-historico td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+  -moz-box-shadow: 0 2px 2px -2px #0E1119;
+  box-shadow: 0 2px 2px -2px #0E1119;
+}
+.table-historico{
+  width: 80%;
+  position: absolute;
+  align-items: center;
+}
+
+
+.table-historico td, .table-historico th {
+  padding-top: 2%;
+  padding-left:2%;  
+}
+/* Background-color para as linhas */
+.table-historico tr:nth-child(odd) {
+  background-color: #eb3c02c4;
+}
+
+/* Background-color of the even rows */
+.table-historico tr:nth-child(even) {
+  background-color: #089B58;
+}
+.table-historico th{
+  background-color: #fff;
+}
+
+.table-historico td:first-child { color: #ffffff; }
+
+.table-historico td {
+  color: #fff;
+}
+
+i{
+  color: #fff;
+  cursor: pointer;
+  transition: .3s ease all;
+  float: right;
+  text-align:right;
+  text-indent: 10px;
+  padding: 10px;
+  
+}
+
+#btnExport {
+  position:relative;
+  top: 280px;
+  right: 73%;
+  padding: 10px;
+  color: #fff;
+  background-color: #35a7f7;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s ease all;
+  width: 15%;
+  text-align: center;
+}
+
+#btnExport:hover {
+  background-color: #50a8e7;
+}
+
+.btn-historico{
+  position:relative;
+  top: 280px;
+  padding: 10px;
+  color: #fff;
+  background-color: #35a7f7;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s ease all;
+  left: 59%;
+  margin: 20px;
+}
+
+ input{
+  margin: 10px;
+}
+
+button{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-month{
+  position: relative;
+  top: 280px;
+  margin-left: 50%;
+  width: 200px;
+  background-color: #35a7f7;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px;
+  left: 7%;
+}
+
+.modal-bg{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal{
+  position: relative;
+  background-color: #fff;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5px;
+}
+.modal button{
+  padding: 10px 30px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.modal-close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

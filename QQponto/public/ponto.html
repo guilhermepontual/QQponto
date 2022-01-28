@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/ponto.css">
+  <script src="https://kit.fontawesome.com/c8c11837ad.js" crossorigin="anonymous"></script>
+  <title>QQponto</title>
+</head>
+
+<body>
+  <form action="/pontoEntrada" method="POST">
+    <div class="wrapper">
+      <div class="brand-name">
+        <h1>QQponto</h1>
+      </div>
+      <ul>
+        <li><img src="./Img/ponto.png" alt="">&nbsp;Meu ponto</li>
+        <!--non-breaking space-->
+        <li>
+          <a href="/historico" style="color:#1E265E"> <img src="./Img/historico.png" alt="">&nbsp;Histórico</a>
+        </li>
+        <!--non-breaking space-->
+        <br>
+        <br>
+        <li>
+          <a href="logout" style="color:#1E265E"> <img src="./Img/logout.png" alt="">&nbsp;Sair</a>
+        </li>
+        <!--non-breaking space-->
+      </ul>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="nav">
+          <h2 class="registrar-ponto">Registrar Ponto</h2>
+          <h4>Atenção: Ao bater o ponto de entrada certifique-se em bater o ponto de saída depois!</h4>
+        </div>
+
+        <div class="user">
+          <img class="img-user" src="Img/user-ofc.png" alt="">
+          <div class="text-img">
+            <h3>Guilherme</h3>
+            <p>Colaborador</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="bater-entrada">
+        <div class="date-time">
+          <label>Data e Hora</label>
+          <br>
+          <input class="data" type="datetime-local" name="pontoEntrada" required="required" />
+          <br>
+          <br>
+          <label>Observação</label>
+          <br>
+          <div>
+            <textarea class="toEnter" id="obs" cols="40" placeholder="Digite sua mensagem aqui"></textarea>
+            <br>
+            <div>
+              <input class="botaoEntrada" type="submit" value="Bater entrada" />
+            </div>
+          </div>
+        </div>
+      </div>
+  </form>
+  <form action="/pontoSaida" method="POST">
+    <div class="bater-saida">
+      <label>Data e Hora</label>
+      <br>
+      <input class="data" type="datetime-local" name="pontoSaida" required="required" />
+      <br>
+      <br>
+      <label>Observação</label>
+      <br>
+      <textarea id="obs" cols="40" placeholder="Digite sua mensagem aqui"></textarea>
+      <br>
+      <input type="submit" class="botaoSaida" value="Bater saída" />
+    </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
